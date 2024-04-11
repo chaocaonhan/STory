@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManDangNhap"
+    android:background="#8644A2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="470dp"
+        android:layout_height="586dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to STory"
+                android:textColor="#673AB7"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:alpha="0.7"
+                android:text="Login to reading " />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="Tai Khoan"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/taikhoan"
+                android:layout_width="321dp"
+                android:layout_height="57dp"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="Mat Khau"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/matkhau"
+                android:layout_width="322dp"
+                android:layout_height="56dp"
+                android:contentDescription="Enter password"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/dangnhap"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Login"
+                android:textColorLink="#984A4A"
+                app:cornerRadius="32dp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/dangki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0.7"
+                android:text="Or Sign Up" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
