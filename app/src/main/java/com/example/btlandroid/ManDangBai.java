@@ -57,12 +57,6 @@ public class ManDangBai extends AppCompatActivity {
                 Intent intent = new Intent(ManDangBai.this, MainActivity.class);
 
                 finish();
-                SharedPreferences preferences = getSharedPreferences("UserInfo", MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("email", email);
-                editor.putString("tentk", tenTaiKhoan);
-                editor.apply();
-
                 startActivity(intent);
             }
         });
